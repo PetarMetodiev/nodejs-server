@@ -21,10 +21,6 @@ router.get('/test', function(req, res, next){
 	res.send('Test hello!');
 });
 
-router.get('/zdrasti', function(req, res, next){
-	res.send('Zdravei mamche! Az sam Pi i ti pokazvam kakvo moga da pravq!');
-});
-
 router.get('/show-off', function(req, res, next){
 	res.render('miro');
 });
