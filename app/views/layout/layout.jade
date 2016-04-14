@@ -2,6 +2,33 @@ doctype html
 html(lang='en')
 	include ./head.jade
 	body
-		block content
+		nav.navbar.navbar-default.navbar-fixed-top
+			.container-fluid
+				.navbar-header
+					button.navbar-toggle.collapsed(data-toggle='collapse', data-target='.navbar-collapse')
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand
+						img.brand-image(src='http://emojipedia-us.s3.amazonaws.com/cache/43/2a/432af77a50a8b565e21e7b9ebe9d279c.png')
+				.collapse.navbar-collapse
+					ul.nav.navbar-nav
+						li.active
+							a(href='#') Click here
+						li
+							a(href='#') or here
+						li
+							a(href='#') or even here
+						li
+							a(href='#') or here
+						li
+							a(href='#') but not here
+						li
+							a(href='#') or here
+					ul.nav.navbar-nav.navbar-right
+						li
+							a(href='#') Login
+		.container-fluid
+			block content
 		include ./footer.jade
 		include ./scripts.jade
